@@ -1,0 +1,264 @@
+{
+  "site": {
+    "title": "我们的小宇宙",
+    "names": ["小满", "阿棠"],
+    "since": "2021-05-20",
+    "subtitle": "把两个人的日子，收进一个可以随时打开的页面。",
+    "footer": "用一点点代码，把日子存起来。",
+    "updated": "2026-10-21"
+  },
+  "people": [
+    {
+      "name": "小满",
+      "role": "他",
+      "avatar": "assets/img/avatar-xiaoman.jpg",
+      "birthday": "1998-06-12",
+      "constellation": "双子座",
+      "mbti": "ENFP",
+      "job": "产品设计师",
+      "hobbies": ["摄影", "骑行", "手冲咖啡", "露营"],
+      "tagline": "负责把日常拍成照片，也负责把照片修得比现实好看一点。",
+      "accent": "#FF8A5B"
+    },
+    {
+      "name": "阿棠",
+      "role": "她",
+      "avatar": "assets/img/avatar-atang.jpg",
+      "birthday": "1999-11-03",
+      "constellation": "天蝎座",
+      "mbti": "INFJ",
+      "job": "插画师",
+      "hobbies": ["画画", "烘焙", "养花", "看展"],
+      "tagline": "负责把照片画成日常，顺便把家里的绿植养得比人精神。",
+      "accent": "#FF9E9E"
+    }
+  ],
+  "anniversaries": [
+    {
+      "label": "在一起",
+      "date": "2021-05-20",
+      "type": "countup",
+      "emoji": "💞",
+      "note": "从一句「那就试试吧」开始"
+    },
+    {
+      "label": "第一次见面",
+      "date": "2021-03-14",
+      "type": "countup",
+      "emoji": "🌷",
+      "note": "在一家开到很晚的书店"
+    },
+    {
+      "label": "第一次旅行",
+      "date": "2021-10-01",
+      "type": "countup",
+      "emoji": "🧳",
+      "note": "海边，风很大，照片都很糊"
+    },
+    {
+      "label": "小满的生日",
+      "date": "1998-06-12",
+      "type": "countdown",
+      "annual": true,
+      "emoji": "🎂",
+      "note": "记得提前订蛋糕"
+    },
+    {
+      "label": "阿棠的生日",
+      "date": "1999-11-03",
+      "type": "countdown",
+      "annual": true,
+      "emoji": "🎁",
+      "note": "她说过想要一束很大的花"
+    },
+    {
+      "label": "在一起的纪念日",
+      "date": "2021-05-20",
+      "type": "countdown",
+      "annual": true,
+      "emoji": "💐",
+      "note": "每年都要认真过"
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2021-03-14",
+      "title": "第一次见面",
+      "text": "在一家开到很晚的书店，从一本没人买的诗集聊到打烊。出门的时候下了小雨，两个人都不太想走。",
+      "emoji": "📖",
+      "photo": "assets/img/couple-bookstore.jpg",
+      "photoAlt": "两个人在户外并肩站着"
+    },
+    {
+      "date": "2021-05-20",
+      "title": "在一起",
+      "text": "没有很隆重的表白，只是在回家的路口停下来，说了一句「那就试试吧」。后来发现，那天刚好是 520。",
+      "emoji": "💞",
+      "photo": "assets/img/couple-sunset.jpg",
+      "photoAlt": "夕阳下牵手的情侣"
+    },
+    {
+      "date": "2021-10-01",
+      "title": "第一次一起旅行",
+      "text": "坐了六个小时的车去看海。风大到说不出话，照片几乎全糊了，但那几天一直被拿出来复习。",
+      "emoji": "🌊",
+      "photo": "assets/img/sea.jpg",
+      "photoAlt": "海边的沙滩与浪花"
+    },
+    {
+      "date": "2022-02-14",
+      "title": "第一次一起做饭",
+      "text": "照着视频做了一桌菜，卖相一般，味道居然不错。从此厨房归她指挥，洗碗归他负责。",
+      "emoji": "🍳",
+      "photo": "assets/img/dinner.jpg",
+      "photoAlt": "餐桌上摆好的食物"
+    },
+    {
+      "date": "2023-05-20",
+      "title": "搬进同一个家",
+      "text": "纸箱堆到天花板，第一晚只铺了床垫就睡着了。第二天醒来，窗台上的绿萝已经开始长新叶。",
+      "emoji": "🏡",
+      "photo": "assets/img/flowers.jpg",
+      "photoAlt": "窗边盛开的花"
+    },
+    {
+      "date": "2024-06-01",
+      "title": "家里多了一只猫",
+      "text": "在小区门口捡到一只脏兮兮的小橘猫，取名叫「年糕」。现在它是全家最理直气壮的那一个。",
+      "emoji": "🐱",
+      "photo": "assets/img/cat.jpg",
+      "photoAlt": "一只橘猫"
+    }
+  ],
+  "photos": [
+    {
+      "src": "assets/img/paris.jpg",
+      "alt": "巴黎街头的建筑与行人",
+      "caption": "第一次去巴黎",
+      "group": "旅行",
+      "date": "2023-04-12",
+      "size": "wide"
+    },
+    {
+      "src": "assets/img/sea.jpg",
+      "alt": "海边的沙滩与浪花",
+      "caption": "风很大的那片海",
+      "group": "旅行",
+      "date": "2021-10-01"
+    },
+    {
+      "src": "assets/img/lake.jpg",
+      "alt": "湖面与远山",
+      "caption": "湖边的清晨",
+      "group": "旅行",
+      "date": "2022-08-06"
+    },
+    {
+      "src": "assets/img/mountain.jpg",
+      "alt": "云雾中的山峰",
+      "caption": "爬到一半就放弃了",
+      "group": "旅行",
+      "date": "2022-08-07"
+    },
+    {
+      "src": "assets/img/sunset.jpg",
+      "alt": "黄昏的天空",
+      "caption": "下班路上遇见的晚霞",
+      "group": "日常",
+      "date": "2023-09-18",
+      "size": "wide"
+    },
+    {
+      "src": "assets/img/couple-bookstore.jpg",
+      "alt": "两个人在户外并肩站着",
+      "caption": "那年春天的合影",
+      "group": "日常",
+      "date": "2021-03-14"
+    },
+    {
+      "src": "assets/img/couple-sunset.jpg",
+      "alt": "夕阳下牵手的情侣",
+      "caption": "散步散到天色变暗",
+      "group": "日常",
+      "date": "2022-05-20"
+    },
+    {
+      "src": "assets/img/flowers.jpg",
+      "alt": "窗边盛开的花",
+      "caption": "阳台上的第一束花",
+      "group": "日常",
+      "date": "2023-05-21"
+    },
+    {
+      "src": "assets/img/dinner.jpg",
+      "alt": "餐桌上摆好的食物",
+      "caption": "第一次一起做的一桌菜",
+      "group": "美食",
+      "date": "2022-02-14"
+    },
+    {
+      "src": "assets/img/restaurant.jpg",
+      "alt": "暖光下的餐厅",
+      "caption": "楼下那家总也吃不腻的小馆",
+      "group": "美食",
+      "date": "2023-11-11",
+      "size": "wide"
+    },
+    {
+      "src": "assets/img/wedding.jpg",
+      "alt": "婚礼上的花与布置",
+      "caption": "参加朋友的婚礼",
+      "group": "节日",
+      "date": "2024-10-06"
+    },
+    {
+      "src": "assets/img/newyear.jpg",
+      "alt": "节日里相拥的两个人",
+      "caption": "跨年那天的合影",
+      "group": "节日",
+      "date": "2024-12-31"
+    }
+  ],
+  "quotes": [
+    "喜欢是乍见之欢，爱是久处不厌。",
+    "最好的关系，是一起把普通的日子过得有滋有味。",
+    "想和你一起，把「以后」慢慢过成「从前」。",
+    "今天也没什么特别的事，只是忽然很想你。",
+    "世界很大，幸好我们有一个共同的小角落。",
+    "认真吃饭，好好睡觉，然后一起变老。",
+    "所谓浪漫，就是愿意陪你把同一件小事重复很多年。",
+    "日子是过出来的，不是想出来的；所以我们先出门吧。"
+  ],
+  "wishes": [
+    { "id": "w1", "text": "一起去看一次极光", "note": "存钱中，目标是北欧或者漠河", "done": false },
+    { "id": "w2", "text": "养一只猫", "note": "已完成：年糕，2024 年 6 月入住", "done": true },
+    { "id": "w3", "text": "学会做一道拿手菜", "note": "目前进度：番茄炒蛋稳定发挥", "done": true },
+    { "id": "w4", "text": "一起跑一次半程马拉松", "note": "先从每周三次五公里开始", "done": false },
+    { "id": "w5", "text": "把阳台改造成小花园", "note": "已经买好了第一批花盆", "done": false },
+    { "id": "w6", "text": "拍一组只属于我们的照片", "note": "想找一间有落地窗的房子", "done": false },
+    { "id": "w7", "text": "一起看完 100 部电影", "note": "目前 37 / 100", "done": false },
+    { "id": "w8", "text": "每年至少去一个没去过的地方", "note": "2025 年：泉州", "done": true }
+  ],
+  "messages": [
+    {
+      "from": "阿棠",
+      "date": "2026-05-20",
+      "text": "第五年啦。谢谢你每次都记得我不吃香菜，也谢谢你把我画砸的画认真贴起来。"
+    },
+    {
+      "from": "小满",
+      "date": "2026-05-20",
+      "text": "今年也请多指教。冰箱里给你留了蛋糕，记得先吃饭再吃甜的。"
+    },
+    {
+      "from": "阿棠",
+      "date": "2026-09-14",
+      "text": "今天路过那家书店，居然还开着。靠窗的位置空着，我坐了一会儿才走。"
+    },
+    {
+      "from": "小满",
+      "date": "2026-10-01",
+      "text": "下次旅行想去哪里？我都可以，只要是你做的攻略。"
+    }
+  ]
+}

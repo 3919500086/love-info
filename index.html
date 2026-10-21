@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>我们的小宇宙 · love-info</title>
+  <meta name="description" content="属于两个人的个人信息展示页：基本资料、纪念日、恋爱时间线、照片墙与共同心愿。">
+  <meta name="theme-color" content="#FFFBF5">
+  <meta name="color-scheme" content="light">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Quicksand:wght@400;500;600;700&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <div class="page-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="#top">
+        <span class="brand__mark" aria-hidden="true">💕</span>
+        <span class="brand__text">love-info</span>
+      </a>
+      <nav class="nav" aria-label="页面导航">
+        <a class="nav__link" href="#people">两个人</a>
+        <a class="nav__link" href="#dates">纪念日</a>
+        <a class="nav__link" href="#timeline">时间线</a>
+        <a class="nav__link" href="#gallery">相册</a>
+        <a class="nav__link" href="#wishes">心愿</a>
+        <a class="nav__link" href="#messages">留言</a>
+      </nav>
+    </div>
+  </header>
+
+  <noscript>
+    <p class="noscript">这个页面需要启用 JavaScript，才能读取 <code>data.json</code> 并渲染内容。</p>
+  </noscript>
+
+  <main id="main">
+    <p class="data-state" id="data-state" role="status" hidden></p>
+
+    <section class="hero" id="top">
+      <div class="hero__halo" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <p class="hero__eyebrow">EST. <span id="hero-since">2021.05.20</span> · 我们的故事</p>
+        <h1 class="hero__title">
+          <span id="name-a">小满</span>
+          <span class="hero__amp" aria-hidden="true">♥</span>
+          <span id="name-b">阿棠</span>
+        </h1>
+        <p class="hero__subtitle" id="hero-subtitle">把两个人的日子，收进一个可以随时打开的页面。</p>
+
+        <div class="counter">
+          <p class="counter__label">我们在一起已经</p>
+          <p class="counter__days">
+            <span id="days-together">0</span>
+            <span class="counter__unit">天</span>
+          </p>
+          <p class="counter__clock"><span id="clock">00:00:00</span></p>
+          <p class="counter__since" id="counter-since">自 2021 年 5 月 20 日</p>
+        </div>
+
+        <a class="scroll-cue" href="#people">
+          <span>往下看看</span>
+          <span class="scroll-cue__arrow" aria-hidden="true">↓</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="people">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-head__kicker"><span aria-hidden="true"></span>01 — 关于我们</p>
+          <h2 class="section-head__title">两个人</h2>
+          <p class="section-head__desc">一个负责拍照，一个负责出现在照片里；一个把日子过成段子，一个把段子画成画。</p>
+        </div>
+        <div class="people-grid" id="people-grid"></div>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="dates">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-head__kicker"><span aria-hidden="true"></span>02 — 时间刻度</p>
+          <h2 class="section-head__title">纪念日与倒计时</h2>
+          <p class="section-head__desc">数字每天自己往前走，我们只要记得抬头看一眼。</p>
+        </div>
+        <div class="date-grid" id="date-grid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="timeline">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-head__kicker"><span aria-hidden="true"></span>03 — 走过的路</p>
+          <h2 class="section-head__title">我们的时间线</h2>
+          <p class="section-head__desc">没有什么惊天动地的大事，只有一些过了很多年还记得的小事。</p>
+        </div>
+        <ol class="timeline" id="timeline-list"></ol>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="gallery">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-head__kicker"><span aria-hidden="true"></span>04 — 留下的光</p>
+          <h2 class="section-head__title">照片墙</h2>
+          <p class="section-head__desc">有些瞬间没来得及好好看，就被按下了快门。点开可以看大图。</p>
+        </div>
+        <div class="filters" id="filters" role="group" aria-label="照片分类"></div>
+        <div class="gallery" id="gallery-grid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="quote">
+      <div class="container">
+        <figure class="quote reveal">
+          <blockquote class="quote__text" id="quote-text">喜欢是乍见之欢，爱是久处不厌。</blockquote>
+          <figcaption class="quote__foot">
+            <span id="quote-meta">每日一句</span>
+            <button class="quote__next" id="quote-next" type="button">再读一句 <span aria-hidden="true">↻</span></button>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="wishes">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-head__kicker"><span aria-hidden="true"></span>05 — 一起去做</p>
+          <h2 class="section-head__title">共同心愿清单</h2>
+          <p class="section-head__desc">想一起做的事、想去的地方。完成一项，就勾掉一项。</p>
+        </div>
+
+        <div class="wishes reveal">
+          <div class="wishes__head">
+            <p class="wishes__progress-text"><strong id="wish-done">0</strong> / <span id="wish-total">0</span> 件已完成</p>
+            <button class="btn btn--ghost" id="wish-reset" type="button">重置进度</button>
+          </div>
+          <div class="wishes__bar" id="wish-bar" role="progressbar" aria-label="心愿完成进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+            <span class="wishes__bar-fill" id="wish-bar-fill"></span>
+          </div>
+          <ul class="wishes__list" id="wish-list"></ul>
+          <p class="wishes__hint">勾选状态只保存在这台设备的浏览器里，不会同步到其他设备。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="messages">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-head__kicker"><span aria-hidden="true"></span>06 — 说给彼此</p>
+          <h2 class="section-head__title">留言与悄悄话</h2>
+          <p class="section-head__desc">有些话不必等到特别的日子。写下来，就已经很好了。</p>
+        </div>
+
+        <div class="messages-layout">
+          <div class="messages" id="message-list"></div>
+
+          <form class="message-form reveal" id="message-form">
+            <h3 class="message-form__title">留一句话</h3>
+            <p class="message-form__hint">示例站点没有服务器，留言只会保存在当前浏览器的本地存储中，不会上传。</p>
+            <label class="field">
+              <span class="field__label">署名</span>
+              <input class="field__input" id="message-from" name="from" type="text" maxlength="12" placeholder="他 / 她 / 昵称" required>
+            </label>
+            <label class="field">
+              <span class="field__label">内容</span>
+              <textarea class="field__input field__input--area" id="message-text" name="text" rows="4" maxlength="200" placeholder="今天也想告诉你……" required></textarea>
+            </label>
+            <button class="btn" type="submit">存下这句话</button>
+            <p class="message-form__status" id="message-status" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="site-footer__line" id="footer-line">用一点点代码，把日子存起来。</p>
+      <p class="site-footer__meta">亮色暖调 · 数据来自 <code>data.json</code> · <span id="footer-year">2026</span></p>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox" aria-label="照片大图">
+    <button class="lightbox__close" id="lightbox-close" type="button" aria-label="关闭">×</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lightbox-prev" type="button" aria-label="上一张">‹</button>
+    <figure class="lightbox__figure">
+      <img class="lightbox__img" id="lightbox-img" alt="">
+      <figcaption class="lightbox__cap">
+        <span id="lightbox-caption"></span>
+        <span class="lightbox__count" id="lightbox-count"></span>
+      </figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" id="lightbox-next" type="button" aria-label="下一张">›</button>
+  </dialog>
+</body>
+</html>
