@@ -4,3 +4,6 @@ node_modules/
 dist/
 *.log
 .env
+
+# 本地私密数据（不提交、不发布）
+data.private.json
